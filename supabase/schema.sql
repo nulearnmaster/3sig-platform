@@ -74,9 +74,7 @@ CREATE TABLE threads_posts (
   hashtags TEXT[],
   status VARCHAR(20) DEFAULT 'draft',
   posted_at TIMESTAMPTZ,
-  post_url TEXT,
-  likes_count INT DEFAULT 0,
-  comments_count INT DEFAULT 0
+  post_url TEXT
 );
 
 -- product_ideas
@@ -97,5 +95,3 @@ CREATE TABLE product_ideas (
   status VARCHAR(20) DEFAULT 'idea',
   priority VARCHAR(20)
 );
-
-CREATE INDEX idx_ideas_status ON product_ideas(status);
