@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 10, 10, 10;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.sig-gradient {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.sig-glow {
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.3);
+}
