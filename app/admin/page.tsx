@@ -18,6 +18,7 @@ export default function AdminPage() {
           <h1 className="text-4xl font-bold mb-4">Dashboard</h1>
           <p className="text-gray-400 mb-12">News Intelligence Pipeline</p>
 
+          {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
             <div className="p-6 bg-sig-gray rounded-xl border border-white/10">
               <p className="text-3xl font-bold text-sig-green">0</p>
@@ -32,7 +33,7 @@ export default function AdminPage() {
               <p className="text-gray-400 text-sm">Drafts</p>
             </div>
             <div className="p-6 bg-sig-gray rounded-xl border border-white/10">
-              <p className="text-3xl font-bold text-green-500">3</p>
+              <p className="text-3xl font-bold text-green-500">0</p>
               <p className="text-gray-400 text-sm">Published</p>
             </div>
             <div className="p-6 bg-sig-gray rounded-xl border border-white/10">
@@ -41,6 +42,7 @@ export default function AdminPage() {
             </div>
           </div>
 
+          {/* Pipeline Status */}
           <div className="p-8 bg-sig-gray rounded-xl border border-white/10">
             <h2 className="text-xl font-bold mb-6">Pipeline Status</h2>
             <div className="flex items-center justify-between text-sm">
@@ -70,6 +72,25 @@ export default function AdminPage() {
                   <span className="text-green-500">4</span>
                 </div>
                 <p className="text-gray-400">Publish</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Connection Status */}
+          <div className="mt-8 p-6 bg-sig-gray rounded-xl border border-white/10">
+            <h2 className="text-xl font-bold mb-4">Connection Status</h2>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-gray-400">Supabase</span>
+                <span className="text-yellow-500">● Pending</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-400">Neo4j</span>
+                <span className="text-gray-500">○ Not connected</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-400">HackerNews MCP</span>
+                <span className="text-sig-green">● Ready</span>
               </div>
             </div>
           </div>
